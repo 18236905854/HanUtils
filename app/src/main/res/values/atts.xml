@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义点击选择view-->
+    <declare-styleable name="MySelectClickView">
+        <attr name="select_card_radius" format="dimension" />
+        <attr name="select_card_width" format="dimension" />
+        <attr name="select_card_height" format="dimension" />
+        <attr name="select_card_padding" format="dimension" />
+        <attr name="select_card_paddingLeft" format="dimension" />
+        <attr name="select_card_paddingTop" format="dimension" />
+        <attr name="select_card_paddingRight" format="dimension" />
+        <attr name="select_card_paddingBottom" format="dimension" />
+
+        <attr name="select_bg_src" format="reference|color" />
+        <attr name="select_bg_padding" format="dimension" />
+        <attr name="select_bg_paddingLeft" format="dimension" />
+        <attr name="select_bg_paddingTop" format="dimension" />
+        <attr name="select_bg_paddingRight" format="dimension" />
+        <attr name="select_bg_paddingBottom" format="dimension" />
+        <attr name="select_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="select_left_img_src" format="reference|color" />
+        <attr name="select_left_img_width" format="dimension" />
+        <attr name="select_left_img_height" format="dimension" />
+        <attr name="select_left_img_min_width" format="dimension" />
+        <attr name="select_left_img_min_height" format="dimension" />
+        <attr name="select_left_img_show" format="boolean" />
+        <attr name="select_left_img_margin" format="dimension" />
+        <attr name="select_left_img_marginLeft" format="dimension" />
+        <attr name="select_left_img_marginTop" format="dimension" />
+        <attr name="select_left_img_marginRight" format="dimension" />
+        <attr name="select_left_img_marginBottom" format="dimension" />
+
+        <attr name="select_left_text_color" format="color" />
+        <attr name="select_left_text_regex_color" format="color" />
+        <attr name="select_left_text_size" format="dimension" />
+        <attr name="select_left_text_show" format="boolean" />
+        <attr name="select_left_textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="select_left_text" format="string" localization="suggested" />
+        <attr name="select_left_text_regex" format="string" localization="suggested" />
+        <attr name="select_left_text_margin" format="dimension" />
+        <attr name="select_left_text_marginLeft" format="dimension" />
+        <attr name="select_left_text_marginTop" format="dimension" />
+        <attr name="select_left_text_marginRight" format="dimension" />
+        <attr name="select_left_text_marginBottom" format="dimension" />
+
+
+
+        <attr name="select_title_layout_bg_src" format="reference|color" />
+        <attr name="select_title_layout_bg_padding" format="dimension" />
+        <attr name="select_title_layout_bg_paddingLeft" format="dimension" />
+        <attr name="select_title_layout_bg_paddingTop" format="dimension" />
+        <attr name="select_title_layout_bg_paddingRight" format="dimension" />
+        <attr name="select_title_layout_bg_paddingBottom" format="dimension" />
+        <attr name="select_title_layout_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="select_title_bg_src" format="reference|color" />
+        <attr name="select_title_width" format="dimension" />
+        <attr name="select_title_height" format="dimension" />
+        <attr name="select_title_min_width" format="dimension" />
+        <attr name="select_title_min_height" format="dimension" />
+        <attr name="select_title_color" format="color" />
+        <attr name="select_title_hint_color" format="color" />
+        <attr name="select_title_regex_color" format="color" />
+        <attr name="select_title_size" format="dimension" />
+        <attr name="select_title_show" format="boolean" />
+        <attr name="select_titleStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="select_title" format="string" localization="suggested" />
+        <attr name="select_title_hint" format="string" localization="suggested" />
+        <attr name="select_title_regex" format="string" localization="suggested" />
+        <attr name="select_title_margin" format="dimension" />
+        <attr name="select_title_marginLeft" format="dimension" />
+        <attr name="select_title_marginTop" format="dimension" />
+        <attr name="select_title_marginRight" format="dimension" />
+        <attr name="select_title_marginBottom" format="dimension" />
+        <attr name="select_title_maxLines" format="integer" min="0" />
+        <attr name="select_title_maxLength" format="integer" min="0" />
+        <attr name="select_title_maxEms" format="integer" min="0" />
+        <attr name="select_title_ellipsize">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="select_title_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="select_tip_bg_src" format="reference|color" />
+        <attr name="select_tip_color" format="color" />
+        <attr name="select_tip_regex_color" format="color" />
+        <attr name="select_tip_size" format="dimension" />
+        <attr name="select_tip_show" format="boolean" />
+        <attr name="select_tip_width" format="dimension" />
+        <attr name="select_tip_height" format="dimension" />
+        <attr name="select_tip_min_width" format="dimension" />
+        <attr name="select_tip_min_height" format="dimension" />
+        <attr name="select_tip_max_width" format="dimension" />
+        <attr name="select_tip_max_height" format="dimension" />
+        <attr name="select_tipStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="select_tip" format="string" localization="suggested" />
+        <attr name="select_tip_regex" format="string" localization="suggested" />
+        <attr name="select_tip_margin" format="dimension" />
+        <attr name="select_tip_marginLeft" format="dimension" />
+        <attr name="select_tip_marginTop" format="dimension" />
+        <attr name="select_tip_marginRight" format="dimension" />
+        <attr name="select_tip_marginBottom" format="dimension" />
+
+
+        <attr name="select_edit_bg_src" format="reference|color" />
+        <attr name="select_edit_show" format="boolean" />
+        <attr name="select_edit_enabled" format="boolean" />
+        <attr name="select_edit_focusable" format="boolean" />
+        <attr name="select_edit" format="string" localization="suggested" />
+        <attr name="select_edit_hint" format="string" localization="suggested" />
+        <attr name="select_edit_color" format="color" />
+        <attr name="select_edit_hint_color" format="color" />
+        <attr name="select_edit_size" format="dimension" />
+        <attr name="select_edit_width" format="dimension" />
+        <attr name="select_edit_height" format="dimension" />
+        <attr name="select_edit_min_width" format="dimension" />
+        <attr name="select_edit_min_height" format="dimension" />
+        <attr name="select_edit_max_width" format="dimension" />
+        <attr name="select_edit_max_height" format="dimension" />
+        <attr name="select_edit_maxLines" format="integer" min="0" />
+        <attr name="select_edit_maxLength" format="integer" min="0" />
+        <attr name="select_edit_digits" format="string" />
+        <attr name="select_edit_margin" format="dimension" />
+        <attr name="select_edit_marginLeft" format="dimension" />
+        <attr name="select_edit_marginTop" format="dimension" />
+        <attr name="select_edit_marginRight" format="dimension" />
+        <attr name="select_edit_marginBottom" format="dimension" />
+        <attr name="select_edit_rl_show" format="boolean" />
+        <attr name="select_edit_rl_margin" format="dimension" />
+        <attr name="select_edit_rl_marginLeft" format="dimension" />
+        <attr name="select_edit_rl_marginTop" format="dimension" />
+        <attr name="select_edit_rl_marginRight" format="dimension" />
+        <attr name="select_edit_rl_marginBottom" format="dimension" />
+        <attr name="select_editStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="select_edit_ellipsize">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="select_edit_inputType">
+            <flag name="none" value="0x00000000" />
+            <flag name="text" value="0x00000001" />
+            <flag name="textCapCharacters" value="0x00001001" />
+            <flag name="textCapWords" value="0x00002001" />
+            <flag name="textCapSentences" value="0x00004001" />
+            <flag name="textAutoCorrect" value="0x00008001" />
+            <flag name="textAutoComplete" value="0x00010001" />
+            <flag name="textMultiLine" value="0x00020001" />
+            <flag name="textImeMultiLine" value="0x00040001" />
+            <flag name="textNoSuggestions" value="0x00080001" />
+            <flag name="textUri" value="0x00000011" />
+            <flag name="textEmailAddress" value="0x00000021" />
+            <flag name="textEmailSubject" value="0x00000031" />
+            <flag name="textShortMessage" value="0x00000041" />
+            <flag name="textLongMessage" value="0x00000051" />
+            <flag name="textPersonName" value="0x00000061" />
+            <flag name="textPostalAddress" value="0x00000071" />
+            <flag name="textPassword" value="0x00000081" />
+            <flag name="textVisiblePassword" value="0x00000091" />
+            <flag name="textWebEditText" value="0x000000a1" />
+            <flag name="textFilter" value="0x000000b1" />
+            <flag name="textPhonetic" value="0x000000c1" />
+            <flag name="textWebEmailAddress" value="0x000000d1" />
+            <flag name="textWebPassword" value="0x000000e1" />
+            <flag name="number" value="0x00000002" />
+            <flag name="numberSigned" value="0x00001002" />
+            <flag name="numberDecimal" value="0x00002002" />
+            <flag name="numberPassword" value="0x00000012" />
+            <flag name="phone" value="0x00000003" />
+            <flag name="datetime" value="0x00000004" />
+            <flag name="date" value="0x00000014" />
+            <flag name="time" value="0x00000024" />
+            <flag name="money" value="0x99990001" />
+        </attr>
+        <attr name="select_edit_imeOptions">
+            <flag name="normal" value="0x00000000" />
+            <flag name="actionUnspecified" value="0x00000000" />
+            <flag name="actionNone" value="0x00000001" />
+            <flag name="actionGo" value="0x00000002" />
+            <flag name="actionSearch" value="0x00000003" />
+            <flag name="actionSend" value="0x00000004" />
+            <flag name="actionNext" value="0x00000005" />
+            <flag name="actionDone" value="0x00000006" />
+            <flag name="actionPrevious" value="0x00000007" />
+            <flag name="flagNoPersonalizedLearning" value="0x1000000" />
+            <flag name="flagNoFullscreen" value="0x2000000" />
+            <flag name="flagNavigatePrevious" value="0x4000000" />
+            <flag name="flagNavigateNext" value="0x8000000" />
+            <flag name="flagNoExtractUi" value="0x10000000" />
+            <flag name="flagNoAccessoryAction" value="0x20000000" />
+            <flag name="flagNoEnterAction" value="0x40000000" />
+            <flag name="flagForceAscii" value="0x80000000" />
+        </attr>
+        <attr name="select_edit_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="select_right_img_src" format="reference|color" />
+        <attr name="select_right_img_width" format="dimension" />
+        <attr name="select_right_img_height" format="dimension" />
+        <attr name="select_right_img_min_width" format="dimension" />
+        <attr name="select_right_img_min_height" format="dimension" />
+        <attr name="select_right_img_show" format="boolean" />
+        <attr name="select_right_img_margin" format="dimension" />
+        <attr name="select_right_img_marginLeft" format="dimension" />
+        <attr name="select_right_img_marginTop" format="dimension" />
+        <attr name="select_right_img_marginRight" format="dimension" />
+        <attr name="select_right_img_marginBottom" format="dimension" />
+
+        <attr name="select_switch_show" format="boolean" />
+        <attr name="select_switch_width" format="dimension" />
+        <attr name="select_switch_height" format="dimension" />
+        <attr name="select_switch_checked" format="boolean" />
+        <attr name="select_switch_enabled" format="boolean" />
+        <attr name="select_switch_focusable" format="boolean" />
+        <attr name="select_switch_thumb" format="reference" />
+        <attr name="select_switch_track" format="reference" />
+        <attr name="select_switch_margin" format="dimension" />
+        <attr name="select_switch_marginLeft" format="dimension" />
+        <attr name="select_switch_marginTop" format="dimension" />
+        <attr name="select_switch_marginRight" format="dimension" />
+        <attr name="select_switch_marginBottom" format="dimension" />
+
+        <attr name="select_text_bg_src" format="reference|color" />
+        <attr name="select_text_color" format="color" />
+        <attr name="select_text_hint_color" format="color" />
+        <attr name="select_text_regex_color" format="color" />
+        <attr name="select_text_size" format="dimension" />
+        <attr name="select_text" format="string" localization="suggested" />
+        <attr name="select_text_hint" format="string" localization="suggested" />
+        <attr name="select_text_regex" format="string" localization="suggested" />
+        <attr name="select_text_width" format="dimension" />
+        <attr name="select_text_height" format="dimension" />
+        <attr name="select_text_min_width" format="dimension" />
+        <attr name="select_text_min_height" format="dimension" />
+        <attr name="select_text_margin" format="dimension" />
+        <attr name="select_text_marginLeft" format="dimension" />
+        <attr name="select_text_marginTop" format="dimension" />
+        <attr name="select_text_marginRight" format="dimension" />
+        <attr name="select_text_marginBottom" format="dimension" />
+        <attr name="select_text_padding" format="dimension" />
+        <attr name="select_text_paddingLeft" format="dimension" />
+        <attr name="select_text_paddingTop" format="dimension" />
+        <attr name="select_text_paddingRight" format="dimension" />
+        <attr name="select_text_paddingBottom" format="dimension" />
+        <attr name="select_text_maxLines" format="integer" min="0" />
+        <attr name="select_text_maxLength" format="integer" min="0" />
+        <attr name="select_text_maxEms" format="integer" min="0" />
+        <attr name="select_text_show" format="boolean" />
+        <attr name="select_textStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="select_text_ellipsize">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="select_text_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="select_checkbox_width" format="dimension" />
+        <attr name="select_checkbox_height" format="dimension" />
+        <attr name="select_checkbox_margin" format="dimension" />
+        <attr name="select_checkbox_marginLeft" format="dimension" />
+        <attr name="select_checkbox_marginTop" format="dimension" />
+        <attr name="select_checkbox_marginRight" format="dimension" />
+        <attr name="select_checkbox_marginBottom" format="dimension" />
+        <attr name="select_checkbox_enabled" format="boolean" />
+        <attr name="select_checkbox_focusable" format="boolean" />
+        <attr name="select_checkbox_checked" format="boolean" />
+        <attr name="select_checkbox_show" format="boolean" />
+        <attr name="select_checkbox_src" format="reference" />
+
+        <attr name="select_arrow_width" format="dimension" />
+        <attr name="select_arrow_height" format="dimension" />
+        <attr name="select_arrow_margin" format="dimension" />
+        <attr name="select_arrow_marginLeft" format="dimension" />
+        <attr name="select_arrow_marginTop" format="dimension" />
+        <attr name="select_arrow_marginRight" format="dimension" />
+        <attr name="select_arrow_marginBottom" format="dimension" />
+        <attr name="select_arrow_show" format="boolean" />
+        <attr name="select_arrow_src" format="reference" />
+
+        <attr name="select_line_width" format="dimension" />
+        <attr name="select_line_height" format="dimension" />
+        <attr name="select_line_margin" format="dimension" />
+        <attr name="select_line_marginLeft" format="dimension" />
+        <attr name="select_line_marginTop" format="dimension" />
+        <attr name="select_line_marginRight" format="dimension" />
+        <attr name="select_line_marginBottom" format="dimension" />
+        <attr name="select_line_show" format="boolean" />
+        <attr name="select_line_src" format="reference|color" />
+        <attr name="select_line_gravity">
+            <flag name="top" value="0" />
+            <flag name="bottom" value="1" />
+            <flag name="left" value="2" />
+            <flag name="right" value="3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

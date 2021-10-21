@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_select_click_line_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/color_DDDDDD"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_select_click_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+        <View
+            android:id="@+id/v_select_click_line_left"
+            android:layout_width="@dimen/dp_0_5"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_select_click_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_select_click_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_17"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_select_click_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_select_click_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="添加地点"
+                android:textColor="@color/color_343434"
+                android:textSize="@dimen/sp_17" />
+
+            <TextView
+                android:id="@+id/tv_select_click_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_10"
+                android:text="用于限制每个会员此卡券的数量，最小值为“1”"
+                android:textColor="@color/color_9C9C9C"
+                android:textSize="@dimen/sp_11"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_click_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/et_select_click_msg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_10"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="请输入"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/sp_17"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_select_click_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <Switch
+            android:id="@+id/sw_select_click_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:checked="true"
+            android:thumb="@drawable/switch_thumb_default"
+            android:track="@drawable/switch_track_default"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_select_click_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center_vertical|right"
+            android:maxLines="2"
+            android:textColor="@color/color_343434"
+            android:textSize="@dimen/sp_17"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_select_click_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@drawable/checkbox_bg_default"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_select_click_arrow"
+            android:layout_width="@dimen/dp_9"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_arrow_right_gray"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/v_select_click_line_right"
+            android:layout_width="@dimen/dp_0_5"
+            android:layout_height="match_parent"
+            android:background="@color/color_DDDDDD"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_select_click_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0_5"
+        android:background="@color/color_DDDDDD"
+        android:visibility="gone" />
+
+</LinearLayout>
